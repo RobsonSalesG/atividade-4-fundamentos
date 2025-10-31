@@ -1,0 +1,16 @@
+{
+    "name": "projeto-final-acessivel",
+    "version": "1.0.0",
+    "description": "Projeto final - acessibilidade, GitFlow e otimização",
+    "scripts": {
+        "build": "mkdir -p dist && html-minifier-terser index.html -o dist/index.html --collapse-whitespace --remove-comments && minify src/css/style.css > dist/style.min.css && terser src/js/app.js -c -m -o dist/app.min.js",
+        "preview": "npx serve dist -s",
+        "format": "prettier --write \"**/*.{html,css,js,json,md}\""
+    },
+    "devDependencies": {
+        "html-minifier-terser": "^7.0.0",
+        "minify": "^7.0.0",
+        "terser": "^5.0.0",
+        "prettier": "^2.0.0"
+    }
+}
