@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <section id="services" class="container" aria-labelledby="services-title">
+        <h2 id="services-title">Serviços</h2>
+        <ul class="services-list">
+            <li>
+                <article>
+                    <h3>Consultoria</h3>
+                    <p>Serviço de consultoria em acessibilidade e performance.</p>
+                </article>
+            </li>
+            <li>
+                <article>
+                    <h3>Desenvolvimento</h3>
+                    <p>Desenvolvimento front-end com boas práticas.</p>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+
+    <section id="contact" class="container" aria-labelledby="contact-title">
+        <h2 id="contact-title">Contato</h2>
+        <form id="contact-form" novalidate aria-describedby="form-feedback">
+            <div class="form-row">
+                <label for="name">Nome</label>
+                <input id="name" name="name" type="text" required minlength="2">
+            </div>
+            <div class="form-row">
+                <label for="email">E‑mail</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+            <div class="form-row">
+                <label for="message">Mensagem</label>
+                <textarea id="message" name="message" required minlength="10"></textarea>
+            </div>
+            <div class="form-actions">
+                <button type="submit">Enviar</button>
+                <button type="reset">Limpar</button>
+            </div>
+            <div id="form-feedback" role="status" aria-live="polite" class="sr-only"></div>
+        </form>
+    </section>
+
+
+    </main>
+
+
+    <footer class="site-footer" role="contentinfo">
+        <div class="container">
+            <p>&copy; 2025 Kellyta Cunha — Projeto Final</p>
+        </div>
+    </footer>
+</body>
+<script src="js/app.js" defer></script>
+</html>
